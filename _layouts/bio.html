@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="post">
+
+  {%- if page.img -%}
+    <style>
+      .float-right {
+        float: right!important;
+      }
+      .bio-img {
+        width:200px; 
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+        border-radius: .25rem!important;
+      }
+    </style>
+    <div class="float-right">
+        <img class="bio-img" src="{{ page.img }}">
+    </div>
+  {%- endif -%}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
